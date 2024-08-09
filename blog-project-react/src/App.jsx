@@ -3,13 +3,25 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
-function App() {
+const todoTitle = "Call Family123520";
+const todoDesc = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate delectus provident voluptatum porro debitis vero vel expedita nihil pariatur?";
+const date = new Date();
 
+const currentYear = date.getFullYear();
+const currentMonth = date.getMonth();
+const currentday = date.getDate();
+
+function App() {
   return (
     <>
-      <h1>
-       hellow
-      </h1>
+      
+       <div>
+        <h1>TODO APP</h1>
+        <h3>{todoTitle}</h3>
+        <p>{todoDesc}</p>
+        <p>{ currentday + "/" +  currentMonth + "/" + currentYear  }</p>
+       </div>
+     
      
     </>
   )
