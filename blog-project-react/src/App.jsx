@@ -11,12 +11,22 @@ const currentYear = date.getFullYear();
 const currentMonth = date.getMonth();
 const currentday = date.getDate();
 
+// const headingStyle = {
+//   color: "white",
+//   backgroundColor: "purple",
+//   textAlign: "center",
+//   fontSize : "3rem",
+//   padding : "15px",
+// };
+
 function App() {
   return (
     <>
       
        <div>
-        <h1>TODO APP</h1>
+        {/* <h1 style={{color : "green",backgroundColor: "gray",textAlign:"center"}}>TODO APP</h1>,  inline style */}
+        {/* <h1 style = {headingStyle}>TODO APP</h1>  */}
+        <h1 className ="headingStyle">TODO APP</h1>
         <h3>{todoTitle}</h3>
         <p>{todoDesc}</p>
         <p>{ currentday + "/" +  currentMonth + "/" + currentYear  }</p>
