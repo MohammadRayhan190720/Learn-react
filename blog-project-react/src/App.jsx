@@ -22,19 +22,26 @@ const currentday = date.getDate();
 function App() {
   return (
     <>
-      
-       <div>
+      <div>
         {/* <h1 style={{color : "green",backgroundColor: "gray",textAlign:"center"}}>TODO APP</h1>,  inline style */}
         {/* <h1 style = {headingStyle}>TODO APP</h1>  */}
-        <h1 className ="headingStyle">TODO APP</h1>
-        <h3>{todoTitle}</h3>
-        <p>{todoDesc}</p>
-        <p>{ currentday + "/" +  currentMonth + "/" + currentYear  }</p>
-       </div>
-     
-     
+        <h1 className="headingStyle">TODO APP</h1>
+        <div style = {{
+         backgroundColor:"green",
+         width: "400px",
+           boxShadow:"4px 8px 8px gray",
+           margin: "10px",
+           padding: "10px",
+           }}>
+          <h3 className="titleStyle">{todoTitle}</h3>
+          <p className="descStyle">{todoDesc}</p>
+          <p className="footer">
+            {currentday + "/" + currentMonth + "/" + currentYear}
+          </p>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default App
